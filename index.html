@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch Match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="score-area">
+        <button type="button" onclick="start()">Start Game</button>
+        <span >Score:<span id="score">0</span> </span>
+        <span >moves:<span id="life">30</span> </span>
+        <span >High score:<span id="highscore">0</span></span>
+        
+    </section>
+    <div id ="play-area">
+        <section class="ground">
+            <div class="wrapper">
+                <div class="dirt"></div>
+                <div class="mole" id="a1" onclick="life()"></div>
+            </div>
+        </section>
+        <section class="ground">
+            <div class="wrapper">
+                <div class="dirt"></div>
+                <div class="mole" id="a2" onclick="life()"></div>
+            </div>
+        </section>
+        <section class="ground">
+            <div class="wrapper">
+                <div class="dirt"></div>
+                <div class="mole" id="a3" onclick="life()" ></div>
+            </div>
+        </section>
+        <section class="ground">
+            <div class="wrapper">
+                <div class="dirt"></div>
+                <div class="mole" id=a4 onclick="life()" ></div>
+            </div>
+        </section>
+
+        <section class="ground">
+            <div class="wrapper">
+                <div class="dirt"></div>
+                <div class="mole" id="a5" onclick="life()"></div>
+            </div>
+        </section>
+        <section class="ground">
+            <div class="wrapper">
+                <div class="dirt"></div>
+                <div class="mole" id="a6" onclick="life()"></div>
+            </div>
+        </section>
+        <section class="ground">
+            <div class="wrapper">
+                <div class="dirt"></div>
+                <div class="mole" id="a7" onclick="life()"></div>
+            </div>
+        </section>
+        <section class="ground">
+            <div class="wrapper">
+                <div class="dirt"></div>
+                <div class="mole"  id="a8" onclick="life()"></div>
+            </div>
+        </section>
+    </div>
+    <div class="gameover" id="gameover"> 
+        <div><img src="mole.png" style="margin-left: auto;margin-top:50px ; margin-right: auto;display: block;"></div>
+        <div style="text-align: center;">GAME OVER</div>
+        <div id="gscore" style="text-align: center;"> </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
